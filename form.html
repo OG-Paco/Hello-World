@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Call Checklist And Notes</title>
+</head>
+
+<body>
+
+<title>Call Checklist</title>
+<h2>Customer Information</h2>
+    <div id="infoSection">
+            <div id="acctInfo">                     <!--Customer Information fields-->
+                <form>
+                    <label for="cxName">Customer Name:</label><br>
+                        <input type="text" id="cxName" name="cxName" size="12"><br>
+                    <br>
+                    <label for="cxPhone">Best Callback Number:</label><br>
+                        <input type="text" id="cxPhone" name="cxPhone" 
+                        placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="8" maxlength="12"><br>
+                    <br>
+                    <label for="cxAccount">BAN:</label><br>
+                        <input type="text" id="cxAccount" name="cxAccount" size="8" maxlength="9"><br>
+                    <br>
+                    <label for="imei">IMEI:</label><br>
+                        <input type="text" id="imei" name="imei" size="12" maxlength="15"><br>
+                    <br> 
+                    <label for="lineNumber">*Optional* Line Number:</label><br>
+                        <input type="text" id="lineNumber" name="lineNumber"
+                        placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="8" maxlength="12"><br>
+                </form>
+            </div>
+            <div id="resolutionPath">               <!--Sidebar content for Path to Resolution buttons-->
+                <form>
+                    <input type="radio" id="greeting" name="greeting">
+                        <label for="greeting">Greeting Provided</label><br>
+                    <input type="radio" id="signatureResponse" name="signatureResponse">
+                        <label for="signatureResponse">Signature Response</label><br>
+                    <input type="radio" id="probingQuestions" name="probingQuestions">
+                        <label for="probingQuestions">Probing Questions</label><br>
+                    <input type="radio" id="theFix" name="theFix">
+                        <label for="theFix">The FIX</label><br>
+                    <input type="radio" id="selfHelp" name="selfHelp">
+                        <label for="selfHelp">Self-Help</label><br>
+                    <input type="radio" id="deepenRelations" name="deepenRelations">    
+                        <label for="deepenRelations">Deepen Relationship</label><br>
+                    <input type="radio" id="recapClose" name="recapClose">
+                        <label for="recapClsoe">Recap and Close</label><br>
+                </form>
+            </div>
+    </div>
+
+<hr>
+
+<h3>Notes and Probing Questions</h3>
+    <div id="notesSection">
+        <div id="notes">                        <!--Text box for Call Notes-->
+            <form>
+                <label for="callNotes">Call Notes:</label><br>      
+                    <textarea id="callNotes" name="callNotes" rows="10" width="100%"></textarea><br>
+                <br>
+            </form>
+        </div>
+        <div id="probingQuestions">             <!--Fields for probing questions, want to add collapsibles for additional questions-->
+            <form>
+                <label for="issueLocation">Where is the issue occurring (address of device)?</label><br>
+                    <input type="text" id="issueLocation" name="issueLocation" size="30"><br>
+                <label for="issueStart">When did the issue begin?</label><br>
+                    <input type="text" id="issueStart" name="issueStart" size="30"><br>
+            </form>
+        </div>
+<hr>
+        <h3 id="probingHead">Probing Questions</h3>
+            <div id="addtlQuestions">
+                    <h4>Situation</h4>                  
+                        <ul>                            <!--Collapsible List-->
+                            <li>What shows on the device screen when you have the problem?</li>
+                            <li>Do you get any error messages?</li>
+                            <li>What were you doing with the device when this started happening?</li>
+                            <li>Which devices are having the issue? Are other devices not having the issue?</li>
+                            <li>For Dual SIM with eSIM devices, which line is having the problem?</li>
+                        </ul>
+                    <h4>Duration</h4>
+                        <ul>                            <!--Collapsible List-->
+                            <li>When did you first notice the issue?</li>
+                            <li>Has anything changed recently?</li>
+                            <li>How often does it happen?</li>
+                            <li>Can you repeat the same steps and always have the same problem, or is it sporadic?</li>
+                        </ul>
+                    <h4>Location</h4>
+                        <ul>                            <!--Collapsible List-->
+                            <li>How many bars of signal do you have? Do the signal bars fluctuate?</li>
+                            <li>Do you see 3G, 4G, or LTE on your screen?</li>
+                            <li>Are you inside or outside?</li>
+                        </ul>
+            </div>
+    </div>
+
+</body>
+</html>

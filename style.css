@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f0f0;
+}
+
+#infoSection {
+    padding-block: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+#acctInfo {
+    flex-grow: 1;
+}
+
+#resolutionPath {
+    background-color: #dadada;
+    width: 170px;
+    text-align: justify;
+    border-radius: 10px;
+    border: 2px solid #808080;
+}
+
+#probingHead {
+    text-align: center;
+}
+
+
+#addtlQuestions {
+    background-color: #dadada;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: 2px solid #808080;
+}
